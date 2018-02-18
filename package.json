@@ -7,8 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "16.2.0",
-    "react-native": "0.53.0"
+    "react-native": "0.53.0",
+    "react-navigation": "^1.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
