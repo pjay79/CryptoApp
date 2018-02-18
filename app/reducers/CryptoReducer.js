@@ -1,4 +1,5 @@
 const INITIAL_STATE = [];
-export default function (state = INITIAL_STATE, action) {
-  return state;
-}
+
+const CryptoReducer = (state = INITIAL_STATE, action) => state;
+
+export default CryptoReducer;

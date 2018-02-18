@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import CryptoReducer from './CryptoReducer';
 
-export default combineReducers({
+const rootReducer = combineReducers({
   crypto: CryptoReducer,
 });
+
+export default rootReducer;

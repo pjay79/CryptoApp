@@ -7,7 +7,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './app/store';
-import MainNavigator from './app/routes/routes';
+import MainNavigator from './app/routes';
 
 const App = () => (
   <Provider store={store}>

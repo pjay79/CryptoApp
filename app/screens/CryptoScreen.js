@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 export default class CryptoScreen extends Component {
   static navigationOptions = {
@@ -13,11 +13,7 @@ export default class CryptoScreen extends Component {
   };
 
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>Crypto Screen</Text>
-      </View>
-    );
+    return <View style={styles.container} />;
   }
 }
 
