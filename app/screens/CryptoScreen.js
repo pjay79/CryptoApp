@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
+import CryptoContainer from '../containers/CryptoContainer';
 
 export default class CryptoScreen extends Component {
   static navigationOptions = {
@@ -13,7 +14,11 @@ export default class CryptoScreen extends Component {
   };
 
   render() {
-    return <View style={styles.container} />;
+    return (
+      <View style={styles.container}>
+        <CryptoContainer />
+      </View>
+    );
   }
 }
 
