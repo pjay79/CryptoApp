@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   itemSeparatorComponent: {
     height: 1,
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'darkgrey',
   },
 });
 

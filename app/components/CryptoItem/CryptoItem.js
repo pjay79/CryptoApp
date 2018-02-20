@@ -6,11 +6,33 @@ import Icons from '../../constants/icons';
 
 const CryptoItem = ({ crypto }) => (
   <View style={styles.container}>
-    <View style={styles.containerContentStyle}>
+    <View style={styles.upperContentStyle}>
       <Image style={styles.icon} source={{ uri: Icons[crypto.symbol] }} />
+      <Text style={styles.symbol}>{crypto.symbol}</Text>
       <Text>{crypto.name}</Text>
-      <Text>${crypto.price_usd}</Text>
-      <Text>{crypto.percent_change_24h}%</Text>
+      <Text style={styles.price}>${crypto.price_usd}</Text>
+    </View>
+    <View style={styles.lowerContentStyle}>
+      <Text style={styles.seven}>
+        7d:{' '}
+        <Text
+          style={
+            crypto.percent_change_7d < 0 ? styles.percentChangeMinus : styles.percentChangePlus
+          }
+        >
+          {crypto.percent_change_7d}%
+        </Text>
+      </Text>
+      <Text style={styles.twentyFour}>
+        24h:{' '}
+        <Text
+          style={
+            crypto.percent_change_24h < 0 ? styles.percentChangeMinus : styles.percentChangePlus
+          }
+        >
+          {crypto.percent_change_24h}%
+        </Text>
+      </Text>
     </View>
   </View>
 );

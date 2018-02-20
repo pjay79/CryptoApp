@@ -3,7 +3,7 @@ import CryptoContainer from '../containers/CryptoContainer';
 
 export default class CryptoScreen extends Component {
   static navigationOptions = {
-    title: 'Prices',
+    title: 'Top 10 Market Cap',
     headerStyle: {
       backgroundColor: 'skyblue',
       elevation: 0,
