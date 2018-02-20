@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FlatList } from 'react-native';
-import CryptoItem from '../CryptoItem';
+import { FlatList, ScrollView } from 'react-native';
+import styles from './styles';
 
-const CryptoList = ({ cryptos }) => (
-  <FlatList
-    data={cryptos}
-    keyExtractor={item => item.id}
-    renderItem={({ item }) => <CryptoItem crypto={item} />}
-  />
+const CryptoList = ({ data, renderItem, keyExtractor }) => (
+  <ScrollView containerContentStyle={styles.containerContentStyle}>
+    <FlatList data={data} keyExtractor={keyExtractor} renderItem={renderItem} />
+  </ScrollView>
 );
 
 CryptoList.propTypes = {
-  cryptos: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  keyExtractor: PropTypes.func.isRequired,
+  renderItem: PropTypes.func.isRequired,
 };
 
 export default CryptoList;

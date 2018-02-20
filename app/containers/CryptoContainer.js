@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import FetchCoinData from '../actions/';
 import CryptoList from '../components/CryptoList';
+import CryptoItem from '../components/CryptoItem';
 import Loading from '../components/Loading';
 
 class CryptoContainer extends Component {
@@ -10,11 +11,21 @@ class CryptoContainer extends Component {
     this.props.FetchCoinData();
   }
 
+  keyExtractor = item => item.id;
+
+  renderItem = ({ item }) => <CryptoItem crypto={item} />;
+
   render() {
     if (this.props.crypto.isFetching) {
       return <Loading />;
     }
-    return <CryptoList cryptos={this.props.crypto.data} />;
+    return (
+      <CryptoList
+        data={this.props.crypto.data}
+        keyExtractor={this.keyExtractor}
+        renderItem={this.renderItem}
+      />
+    );
   }
 }
 
