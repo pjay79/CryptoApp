@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiBaseURL from '../constants/coinmarketcap';
+import apiBaseURL from '../constants/apiBaseURL';
 import { FETCH_COIN_DATA, FETCH_COIN_DATA_SUCCESS, FETCH_COIN_DATA_FAIL } from './types';
 
 const FetchCoinData = () => async (dispatch) => {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import CryptoContainer from '../containers/CryptoContainer';
 
 export default class CryptoScreen extends Component {
@@ -15,19 +15,17 @@ export default class CryptoScreen extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView containerContentStyle={styles.containerContentStyle}>
         <CryptoContainer />
-      </View>
+      </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  containerContentStyle: {
     flex: 1,
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
-    paddingBottom: 10,
   },
 });
