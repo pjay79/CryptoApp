@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  itemSeparatorComponent: {
+    height: 1,
+    backgroundColor: 'lightgrey',
+  },
 });
 
 export default styles;

@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FlatList, ScrollView } from 'react-native';
+import { FlatList, ScrollView, View } from 'react-native';
 import styles from './styles';
+
+const ItemSeparatorComponent = () => <View style={styles.itemSeparatorComponent} />;
 
 const CryptoList = ({ data, renderItem, keyExtractor }) => (
   <ScrollView containerContentStyle={styles.containerContentStyle}>
-    <FlatList data={data} keyExtractor={keyExtractor} renderItem={renderItem} />
+    <FlatList
+      data={data}
+      keyExtractor={keyExtractor}
+      renderItem={renderItem}
+      ItemSeparatorComponent={ItemSeparatorComponent}
+    />
   </ScrollView>
 );
 
