@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import Header from '../components/Header';
 import Button from '../components/Button';
 
@@ -17,7 +17,11 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header title="Crypto App" />
+        <Header title="Crypto Tracker" />
+        <Image
+          style={{ height: 150, width: 150 }}
+          source={require('../assets/images/logo/bitcoin.png')}
+        />
         <Button
           title="START"
           onPress={() => this.props.navigation.navigate('Crypto')}
