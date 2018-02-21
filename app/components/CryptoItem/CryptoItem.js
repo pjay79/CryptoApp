@@ -7,7 +7,7 @@ import Icons from '../../constants/icons';
 const CryptoItem = ({ crypto }) => (
   <View style={styles.container}>
     <View style={styles.upperContentStyle}>
-      <Image style={styles.icon} source={{ uri: Icons[crypto.symbol] }} />
+      <Image style={styles.icon} source={Icons[crypto.symbol]} />
       <Text style={styles.symbol}>{crypto.symbol}</Text>
       <Text>{crypto.name}</Text>
       <Text style={styles.price}>${crypto.price_usd}</Text>
