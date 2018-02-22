@@ -10,9 +10,7 @@ const CryptoItem = ({ crypto }) => (
       <Image style={styles.icon} source={Icons[crypto.symbol]} />
       <Text style={styles.symbol}>{crypto.symbol}</Text>
       <Text>{crypto.name}</Text>
-      <Text style={styles.price}>
-        $US{new Intl.NumberFormat({ style: 'currency', currency: 'USD' }).format(crypto.price_usd)}
-      </Text>
+      <Text style={styles.price}>$US{crypto.price_usd}</Text>
     </View>
     <View style={styles.lowerContentStyle}>
       <Text style={styles.seven}>

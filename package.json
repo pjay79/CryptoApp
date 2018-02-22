@@ -12,6 +12,8 @@
     "react": "16.2.0",
     "react-native": "0.53.0",
     "react-native-indicators": "^0.11.1",
+    "react-native-material-bottom-navigation": "^0.8.2",
+    "react-native-vector-icons": "^4.5.0",
     "react-navigation": "^1.0.3",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
@@ -35,6 +37,8 @@
     "preset": "react-native"
   },
   "rnpm": {
-    "assets": ["./app/assets/fonts/"]
+    "assets": [
+      "./app/assets/fonts/"
+    ]
   }
 }

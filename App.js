@@ -4,15 +4,6 @@
  * @flow
  */
 
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './app/store';
-import MainNavigator from './app/routes';
-
-const App = () => (
-  <Provider store={store}>
-    <MainNavigator />
-  </Provider>
-);
+import App from './app/index';
 
 export default App;
