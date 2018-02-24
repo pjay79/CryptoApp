@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import FetchCoinData from '../actions/';
+import { FetchCoinData } from '../actions/';
 import CryptoList from '../components/CryptoList';
 import CryptoItem from '../components/CryptoItem';
 import Loading from '../components/Loading';

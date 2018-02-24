@@ -1,3 +1,1 @@
-import FetchCoinData from './FetchCoinData';
-
-export default FetchCoinData;
+export * from './FetchData';

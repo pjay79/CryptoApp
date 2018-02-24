@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { View } from 'react-native';
+import CryptoGlobalContainer from '../containers/CryptoGlobalContainer';
 
 export default class GlobalScreen extends Component {
   static navigationOptions = {
@@ -15,6 +15,6 @@ export default class GlobalScreen extends Component {
   };
 
   render() {
-    return <View />;
+    return <CryptoGlobalContainer />;
   }
 }
