@@ -35,7 +35,7 @@ CryptoContainer.propTypes = {
     isFetching: PropTypes.bool,
     data: PropTypes.array,
     hasError: PropTypes.bool,
-    errorMessage: PropTypes.string,
+    errorMessage: PropTypes.object,
   }).isRequired,
 };
 

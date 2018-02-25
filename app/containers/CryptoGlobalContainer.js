@@ -24,7 +24,7 @@ CryptoGlobalContainer.propTypes = {
     isFetching: PropTypes.bool,
     data: PropTypes.object,
     hasError: PropTypes.bool,
-    errorMessage: PropTypes.string,
+    errorMessage: PropTypes.object,
   }).isRequired,
 };
 
