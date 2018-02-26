@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, AsyncStorage } from 'react-native';
 import Header from '../components/Header';
 import Button from '../components/Button';
 
@@ -14,12 +14,17 @@ export default class HomeScreen extends Component {
     headerLeft: null,
   };
 
+  componentDidMount = async () => {
+    // AsyncStorage.clear();
+    await AsyncStorage.setItem('@SKIP_INTRO', JSON.stringify('true'));
+  };
+
   render() {
     return (
       <View style={styles.container}>
         <Header title="Crypto Tracker" />
         <Image
-          style={{ height: 150, width: 150 }}
+          style={{ height: 200, width: 200 }}
           source={require('../assets/images/logo/bitcoin.png')}
         />
         <Button

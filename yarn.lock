@@ -4050,6 +4050,12 @@ react-native-material-bottom-navigation@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/react-native-material-bottom-navigation/-/react-native-material-bottom-navigation-0.8.2.tgz#f75e74901eb9ee6968eb8f60f1e1d26be9d0e437"
 
+react-native-onboarding-swiper@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-onboarding-swiper/-/react-native-onboarding-swiper-0.4.1.tgz#bc3cf494a0655bc7ca1bfeef4c0e3242366da329"
+  dependencies:
+    tinycolor2 "^1.4.1"
+
 react-native-safe-area-view@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.6.0.tgz#ce01eb27905a77780219537e0f53fe9c783a8b3d"
@@ -4896,6 +4902,10 @@ through@^2.3.6:
 time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
+
+tinycolor2@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
 
 tmp@^0.0.33:
   version "0.0.33"

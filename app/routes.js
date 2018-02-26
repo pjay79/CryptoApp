@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation';
 import { NavigationComponent } from 'react-native-material-bottom-navigation';
+import IntroScreen from './screens/IntroScreen';
 import HomeScreen from './screens/HomeScreen';
 import RankingScreen from './screens/RankingScreen';
 import GlobalScreen from './screens/GlobalScreen';
@@ -34,6 +35,9 @@ const CryptoTabs = TabNavigator(
 );
 
 const MainNavigator = StackNavigator({
+  Intro: {
+    screen: IntroScreen,
+  },
   Home: {
     screen: HomeScreen,
   },
