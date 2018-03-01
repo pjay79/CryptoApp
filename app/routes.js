@@ -1,7 +1,7 @@
 import { Platform, Animated, Easing } from 'react-native';
 import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation';
 import { NavigationComponent } from 'react-native-material-bottom-navigation';
-import SplashScreen from './screens/SplashScreen';
+import LoadingScreen from './screens/LoadingScreen';
 import IntroScreen from './screens/IntroScreen';
 import HomeScreen from './screens/HomeScreen';
 import RankingScreen from './screens/RankingScreen';
@@ -37,8 +37,8 @@ const CryptoTabs = TabNavigator(
 
 const MainNavigator = StackNavigator(
   {
-    Splash: {
-      screen: SplashScreen,
+    Loading: {
+      screen: LoadingScreen,
     },
     Intro: {
       screen: IntroScreen,

@@ -6,14 +6,16 @@ import styles from './styles';
 const ItemSeparatorComponent = () => <View style={styles.itemSeparatorComponent} />;
 
 const CryptoList = ({ data, renderItem, keyExtractor }) => (
-  <ScrollView containerContentStyle={styles.containerContentStyle}>
-    <FlatList
-      data={data}
-      keyExtractor={keyExtractor}
-      renderItem={renderItem}
-      ItemSeparatorComponent={ItemSeparatorComponent}
-    />
-  </ScrollView>
+  <View style={styles.container}>
+    <ScrollView containerContentStyle={styles.containerContentStyle}>
+      <FlatList
+        data={data}
+        keyExtractor={keyExtractor}
+        renderItem={renderItem}
+        ItemSeparatorComponent={ItemSeparatorComponent}
+      />
+    </ScrollView>
+  </View>
 );
 
 CryptoList.propTypes = {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AsyncStorage, View } from 'react-native';
 import PropTypes from 'prop-types';
 
-class SplashScreen extends Component {
+class LoadingScreen extends Component {
   static navigationOptions = {
     headerStyle: {
       backgroundColor: 'skyblue',
@@ -11,7 +11,7 @@ class SplashScreen extends Component {
     },
   };
 
-  async componentWillMount() {
+  async componentDidMount() {
     // AsyncStorage.clear();
     const value = await AsyncStorage.getItem('@SKIP_INTRO');
     if (value !== null || value === 'true') {
@@ -26,10 +26,10 @@ class SplashScreen extends Component {
   }
 }
 
-SplashScreen.propTypes = {
+LoadingScreen.propTypes = {
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired,
   }).isRequired,
 };
 
-export default SplashScreen;
+export default LoadingScreen;
