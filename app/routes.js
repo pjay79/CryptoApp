@@ -1,6 +1,7 @@
-import { Platform } from 'react-native';
+import { Platform, Animated, Easing } from 'react-native';
 import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation';
 import { NavigationComponent } from 'react-native-material-bottom-navigation';
+import SplashScreen from './screens/SplashScreen';
 import IntroScreen from './screens/IntroScreen';
 import HomeScreen from './screens/HomeScreen';
 import RankingScreen from './screens/RankingScreen';
@@ -34,16 +35,30 @@ const CryptoTabs = TabNavigator(
   },
 );
 
-const MainNavigator = StackNavigator({
-  Intro: {
-    screen: IntroScreen,
+const MainNavigator = StackNavigator(
+  {
+    Splash: {
+      screen: SplashScreen,
+    },
+    Intro: {
+      screen: IntroScreen,
+    },
+    Home: {
+      screen: HomeScreen,
+    },
+    Crypto: {
+      screen: CryptoTabs,
+    },
   },
-  Home: {
-    screen: HomeScreen,
+  {
+    transitionConfig: () => ({
+      transitionSpec: {
+        duration: 0,
+        timing: Animated.timing,
+        easing: Easing.step0,
+      },
+    }),
   },
-  Crypto: {
-    screen: CryptoTabs,
-  },
-});
+);
 
 export default MainNavigator;
