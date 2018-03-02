@@ -21,7 +21,7 @@ const CryptoTabs = TabNavigator(
     tabBarPosition: 'bottom',
     tabBarOptions: {
       activeTintColor: 'black',
-      inactiveTintColor: 'lightgray',
+      inactiveTintColor: 'white',
       style: {
         backgroundColor: 'skyblue',
       },

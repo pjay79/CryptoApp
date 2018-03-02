@@ -9,6 +9,7 @@ class IntroScreen extends Component {
       elevation: 0,
       borderBottomWidth: 0,
     },
+    headerLeft: null,
   };
 
   onDone = () => {
