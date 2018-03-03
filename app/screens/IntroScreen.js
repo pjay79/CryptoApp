@@ -16,8 +16,12 @@ class IntroScreen extends Component {
     this.props.navigation.navigate('Home');
   };
 
+  onSkip = () => {
+    this.props.navigation.navigate('Home');
+  };
+
   render() {
-    return <Slider onDone={this.onDone} />;
+    return <Slider onDone={this.onDone} onSkip={this.onSkip} />;
   }
 }
 

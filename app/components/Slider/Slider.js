@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Onboarding from 'react-native-onboarding-swiper';
 import styles from './styles';
 
-const Slider = ({ onDone }) => (
+const Slider = ({ onDone, onSkip }) => (
   <Onboarding
     pages={[
       {
@@ -25,11 +25,13 @@ const Slider = ({ onDone }) => (
       },
     ]}
     onDone={onDone}
+    onSkip={onSkip}
   />
 );
 
 Slider.propTypes = {
   onDone: PropTypes.func.isRequired,
+  onSkip: PropTypes.func.isRequired,
 };
 
 export default Slider;
