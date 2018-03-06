@@ -4060,9 +4060,9 @@ react-native-material-bottom-navigation@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/react-native-material-bottom-navigation/-/react-native-material-bottom-navigation-0.8.2.tgz#f75e74901eb9ee6968eb8f60f1e1d26be9d0e437"
 
-react-native-onboarding-swiper@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-onboarding-swiper/-/react-native-onboarding-swiper-0.3.1.tgz#1c5f3f32e377472770dcc9038c51c79a76b28df9"
+react-native-onboarding-swiper@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-onboarding-swiper/-/react-native-onboarding-swiper-0.4.2.tgz#56a7bebef6d73d436e0580ef7ff755951432c661"
   dependencies:
     tinycolor2 "^1.4.1"
 
