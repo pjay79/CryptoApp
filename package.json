@@ -5,13 +5,16 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "flow-start": "flow start",
-    "flow-stop": "flow stop"
+    "flow start": "flow start",
+    "flow status": "flow status",
+    "flow stop": "flow stop",
+    "flow coverage": "flow coverage"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "prop-types": "^15.6.0",
     "react": "16.2.0",
+    "react-dom": "^16.2.0",
     "react-native": "0.53.0",
     "react-native-indicators": "^0.11.1",
     "react-native-material-bottom-navigation": "^0.8.2",
@@ -26,13 +29,16 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
-    "babel-jest": "22.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "4.0.0",
-    "eslint": "^4.18.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "flow-bin": "0.63.0",
@@ -40,11 +46,10 @@
     "react-test-renderer": "16.2.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": ["/node_modules/(?!(jest-)?react-native|react-navigation)"]
   },
   "rnpm": {
-    "assets": [
-      "./app/assets/fonts/"
-    ]
+    "assets": ["./app/assets/fonts/"]
   }
 }

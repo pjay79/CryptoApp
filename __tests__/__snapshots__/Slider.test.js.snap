@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider renders correctly 1`] = `
+<View
+  collapsable={undefined}
+  onLayout={[Function]}
+  style={
+    Object {
+      "backgroundColor": "skyblue",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "backgroundColor": "skyblue",
+          "image": <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/intro/bar-chart.png",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "marginTop": -333.5,
+                "width": 200,
+              }
+            }
+          />,
+          "subtitle": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "marginTop": 25,
+              }
+            }
+          >
+            Ranking by market cap
+          </Text>,
+          "title": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 36,
+                "fontWeight": "800",
+              }
+            }
+          >
+            Top 10
+          </Text>,
+        },
+        Object {
+          "backgroundColor": "skyblue",
+          "image": <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/intro/network.png",
+              }
+            }
+            style={
+              Object {
+                "height": 200,
+                "marginTop": -333.5,
+                "width": 200,
+              }
+            }
+          />,
+          "subtitle": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "marginTop": 25,
+              }
+            }
+          >
+            Cryptocurrency data
+          </Text>,
+          "title": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 36,
+                "fontWeight": "800",
+              }
+            }
+          >
+            Global
+          </Text>,
+        },
+      ]
+    }
+    disableVirtualization={false}
+    extraData={null}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    initialNumToRender={1}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    onViewableItemsChanged={[Function]}
+    pagingEnabled={true}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsHorizontalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfig={
+      Object {
+        "itemVisiblePercentThreshold": 100,
+      }
+    }
+    viewabilityConfigCallbackPairs={
+      Array [
+        Object {
+          "onViewableItemsChanged": [Function],
+          "viewabilityConfig": Object {
+            "itemVisiblePercentThreshold": 100,
+          },
+        },
+      ]
+    }
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "paddingTop": 0,
+              },
+              Object {
+                "height": 1334,
+                "width": 750,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 0,
+                "paddingBottom": 60,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../app/assets/images/intro/bar-chart.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 200,
+                  "marginTop": -333.5,
+                  "width": 200,
+                }
+              }
+            />
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 36,
+                "fontWeight": "800",
+              }
+            }
+          >
+            Top 10
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "marginTop": 25,
+              }
+            }
+          >
+            Ranking by market cap
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "width": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.1)",
+        "flexDirection": "row",
+        "height": 60,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 0,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flexShrink": 1,
+          "width": 200,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 0,
+            "marginLeft": 10,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={
+            Object {
+              "bottom": 15,
+              "left": 15,
+              "right": 15,
+              "top": 15,
+            }
+          }
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flex": 0,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.8)",
+                "fontSize": 16,
+              }
+            }
+          >
+            Skip
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 0,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.8)",
+            "borderRadius": 3,
+            "height": 6,
+            "marginHorizontal": 3,
+            "width": 6,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.3)",
+            "borderRadius": 3,
+            "height": 6,
+            "marginHorizontal": 3,
+            "width": 6,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flexShrink": 1,
+          "width": 200,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 0,
+            "marginRight": 10,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={
+            Object {
+              "bottom": 15,
+              "left": 15,
+              "right": 15,
+              "top": 15,
+            }
+          }
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flex": 0,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.8)",
+                "fontSize": 16,
+              }
+            }
+          >
+            Next
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
