@@ -19,19 +19,20 @@ https://coinmarketcap.com/api/
 
 ## Technology stack:
 
-* react-native
-* react-navigation
-* react-native-vector-icons
-* react-native-splash-screen
-* react-native-onboarding-swiper
-* react-native-indicators
-* react-native-material-bottom-navigation
-* redux
-* react-redux
-* redux-thunk
-* redux-logger
-* redux-devtools-extension
 * axios
+* prop-types
+* react
+* react-native
+* react-native-indicators
+* react-native-onboarding-swiper
+* react-native-splash-screen
+* react-native-vector-icons
+* react-navigation
+* react-redux
+* redux
+* redux-devtools-extension
+* redux-logger
+* redux-thunk
 
 ## Installation
 
