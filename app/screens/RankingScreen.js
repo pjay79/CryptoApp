@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import CryptoContainer from '../containers/CryptoContainer';
 
 export default class RankingScreen extends Component {
@@ -7,11 +6,11 @@ export default class RankingScreen extends Component {
     title: 'Top 10',
     headerStyle: {
       backgroundColor: 'skyblue',
-      elevation: 0,
-      borderBottomWidth: 0,
+    },
+    headerTitleStyle: {
+      color: 'black',
     },
     headerLeft: null,
-    tabBarIcon: ({ tintColor }) => <Icon name="list-ol" size={24} color={tintColor} />,
   };
 
   render() {

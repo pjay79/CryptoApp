@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import Slider from '../components/Slider';
 
 class IntroScreen extends Component {
@@ -11,6 +12,10 @@ class IntroScreen extends Component {
     },
     headerLeft: null,
   };
+
+  componentDidMount() {
+    SplashScreen.hide();
+  }
 
   onDone = () => {
     this.props.navigation.navigate('Home');

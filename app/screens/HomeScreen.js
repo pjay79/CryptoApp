@@ -1,26 +1,52 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { AsyncStorage } from 'react-native';
-import Home from '../components/Home';
+import React, { Component } from 'react';
+import { View, Text, Image, StyleSheet, AsyncStorage } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import Button from '../components/Button';
 
 export default class HomeScreen extends Component {
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: 'skyblue',
-      elevation: 0,
-      borderBottomWidth: 0,
-    },
-    headerLeft: null,
+    header: null,
   };
 
-  async componentDidMount() {
-    await AsyncStorage.setItem('@SKIP_INTRO', JSON.stringify('true'));
+  componentDidMount() {
+    SplashScreen.hide();
+    AsyncStorage.setItem('@SKIP_INTRO', 'true');
   }
 
   render() {
-    return <Home navigation={this.props.navigation} />;
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>CryptoTracker</Text>
+        <Image style={styles.image} source={require('../assets/images/logo/bitcoin.png')} />
+        <Button
+          title="START"
+          onPress={() => this.props.navigation.navigate('Crypto')}
+          style={{
+            backgroundColor: 'black',
+          }}
+        />
+      </View>
+    );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'skyblue',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  header: {
+    fontFamily: 'Pacifico',
+    fontSize: 44,
+  },
+  image: {
+    height: 200,
+    width: 200,
+  },
+});
 
 HomeScreen.propTypes = {
   navigation: PropTypes.shape({

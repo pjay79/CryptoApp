@@ -1,35 +1,47 @@
-import React, { Component } from 'react';
-import { AsyncStorage, View } from 'react-native';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { View, StyleSheet, ActivityIndicator, AsyncStorage } from 'react-native';
 
-class LoadingScreen extends Component {
+export default class LoadingScreen extends Component {
   static navigationOptions = {
     headerStyle: {
       backgroundColor: 'skyblue',
-      elevation: 0,
-      borderBottomWidth: 0,
     },
   };
 
-  async componentDidMount() {
-    // AsyncStorage.clear();
+  componentDidMount() {
+    this.checkIntro();
+  }
+
+  checkIntro = async () => {
     const value = await AsyncStorage.getItem('@SKIP_INTRO');
-    if (value !== null || value === 'true') {
+    if (value === 'true') {
       this.props.navigation.navigate('Home');
     } else {
       this.props.navigation.navigate('Intro');
     }
-  }
+  };
 
   render() {
-    return <View style={{ flex: 1, backgroundColor: 'skyblue' }} />;
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator />
+      </View>
+    );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'skyblue',
+  },
+});
 
 LoadingScreen.propTypes = {
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired,
   }).isRequired,
 };
-
-export default LoadingScreen;
