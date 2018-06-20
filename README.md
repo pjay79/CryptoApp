@@ -58,7 +58,7 @@ Add dependencies:
 `npm install` or `yarn`
 
 Run on ios:
-`react-native-run-ios`
+`react-native run-ios`
 
 Run on android:
-`react-native-run-android`
+`react-native run-android`
