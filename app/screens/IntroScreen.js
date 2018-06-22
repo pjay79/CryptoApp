@@ -5,12 +5,7 @@ import Slider from '../components/Slider';
 
 class IntroScreen extends Component {
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: 'skyblue',
-      elevation: 0,
-      borderBottomWidth: 0,
-    },
-    headerLeft: null,
+    header: null,
   };
 
   componentDidMount() {

@@ -4,9 +4,7 @@ import { View, StyleSheet, ActivityIndicator, AsyncStorage } from 'react-native'
 
 export default class LoadingScreen extends Component {
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: 'skyblue',
-    },
+    header: null,
   };
 
   componentDidMount() {
