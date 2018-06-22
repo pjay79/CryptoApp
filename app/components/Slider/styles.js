@@ -1,10 +1,8 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-const { height } = Dimensions.get('window');
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   image: {
-    marginTop: -height * 0.25,
+    justifyContent: 'center',
     width: 200,
     height: 200,
   },
